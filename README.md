@@ -15,7 +15,7 @@
 ![home page](./thumbnail.png)
 
 ## Live Link
-[click here](https://arunpagedesign1.netlify.app)
+- [click here](https://arunpagedesign1.netlify.app)
 
 
 
