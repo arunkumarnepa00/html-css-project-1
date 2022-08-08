@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body{
+    font-family: Orbitron;
+    font-weight: bold;
+}
+
+/* navbar */
+.navbar-container{
+    padding-block:20px;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.navbar-container>div img{
+    width:100px;
+}
+.list{
+    list-style-type:none;
+    display:flex;
+    align-items: center;
+}
+.list-item{
+    padding-inline:25px;
+    font-size:medium;
+}
+.list-item:first-of-type{
+    font-size:large;
+    font-weight: bold;
+}
+.list-item:first-of-type::after{
+    content:"";
+    display:block;
+    width:80%;
+    height:2px;
+    background-color:black;
+    margin-left:10%;
+}
+.button-group{
+    display: flex;
+    align-items:center;
+}
+.search-icon>svg{
+width:20px;
+}
+.nav-button{
+    border:2px solid black;
+    background-color: #fff;
+    padding:5px 40px;
+    font-size:medium;
+    border-radius:10px;
+    margin-left:10px;
+    color:grey;
+}
+@media only screen and (max-width:900px){
+    .list{
+      display: none;
+    }
+    .button-group{
+      display: none;
+    }
+    .navbar-container{
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar-container::after{
+      content: "";
+      display: inline-block;
+      width:40px;
+      height:40px;
+      background-color: #fff;
+      background-image: url(./assets/hamburger-menu-more-2-svgrepo-com.svg);
+      background-repeat: no-repeat;
+      background-size:40px 40px;
+      padding-right:10px;
+    }
+    .navbar-container>div img{
+       margin-left:10px;
+    }
+}
+
+
+/* container below nav bar*/
+.hero-container{
+    position:relative;
+    display:flex;
+    height:75vh;
+}
+
+/*image adjustments */
+.hero-container>div>img{
+    width:300px;
+    height:360px;
+    position:absolute;
+    left:6%;
+    z-index:1;
+    top:8%;
+}
+.square>img{
+    position:absolute;
+    width:260px;
+    height:220px;
+    left:13%;
+    top:50%;
+}
+.star{
+    position:absolute;
+    left:90%;
+    top:10%;
+}
+.star>img{
+    width:50px;
+}
+.globe{
+    position:absolute;
+    left:50%;  
+}
+.globe>img{
+    width:50px;
+}
+.hero-container::after{
+ content:" ";
+ background-image:url('/assets/start.png');
+ background-size:30px;
+ background-repeat: no-repeat;
+ background-position: center;
+ width:40px;
+ height:40px;
+ position:absolute;
+ top:85%;
+ left:40%;
+ 
+}
+/* right side details */
+.hero-container-right{
+    position:absolute;
+    left:35%;
+    top:15%;
+    text-align: center;
+}
+.hero-heading{
+    font-size:50px;
+}
+.hero-description{
+    font-size:12px;
+    padding-inline:20%;
+    color:gray;
+}
+
+/* buttons */
+.hero-container-right>div:first-of-type{
+    padding-block:35px;
+}
+.button-email{
+    padding:5px 30px;
+    background-color: #fff;
+    border-radius:5px;
+    color:gray
+}
+.button-join{
+    padding:5px 5px;
+    background-color:black;
+    color: #fff;
+    border-radius:5px;
+}
+
+/* contact and icons */
+.contact-heading{
+    color: grey;
+}
+.icons{
+    margin-top:-10px;
+}
+.icons>span>img{
+width:25px;
+padding-inline:5px;
+}
+@media only screen and (max-width:900px) and (min-width:480px){
+    .square>img{
+        top:55%;
+        left:20%;
+    }
+    .star>img{
+        right:100px;
+    }
+    .hero-heading{
+        font-size:40px;
+    }
+    .hero-container-right{
+        position:relative;
+        left:0;
+        top:100%;
+        margin-top:50px;
+        width:100%;
+        margin-inline:20px;
+    }
+    .hero-container>div>img{
+        top:12%;
+        left:5%;
+    }
+    .hero-container::after{
+        left:80%;
+        top:100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .square>img{
+        top:50%;
+        left:28%;
+    }
+    .hero-heading{
+        font-size:40px;
+    }
+    .hero-container-right{
+        position:relative;
+        left:0;
+        top:100%;
+        
+    }
+    .hero-container>div>img{
+        top:20%;
+    }
+    .hero-container::after{
+        left:80%;
+        top:90%;
+    }
+} 
