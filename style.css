@@ -182,8 +182,8 @@ padding-inline:5px;
         top:55%;
         left:20%;
     }
-    .star>img{
-        right:100px;
+    .star{
+        left:80%;
     }
     .hero-heading{
         font-size:40px;
@@ -210,14 +210,16 @@ padding-inline:5px;
         top:50%;
         left:28%;
     }
+    .star{
+        left:85%;
+     }
     .hero-heading{
         font-size:40px;
     }
     .hero-container-right{
         position:relative;
         left:0;
-        top:100%;
-        
+        top:100%;   
     }
     .hero-container>div>img{
         top:20%;
