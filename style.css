@@ -54,6 +54,30 @@ width:20px;
     margin-left:10px;
     color:grey;
 }
+@media only screen and (max-width:900px){
+    .list{
+      display: none;
+    }
+    .button-group{
+      display: none;
+    }
+    .navbar-container{
+      display: flex;
+      justify-content: space-between;
+      padding-inline:10px;
+    }
+    .navbar-container::after{
+      content: "";
+      display: inline-block;
+      width:40px;
+      height:40px;
+      background-color: #fff;
+      background-image: url(./assets/hamburger-menu-more-2-svgrepo-com.svg);
+      background-repeat: no-repeat;
+      background-size:40px 40px;
+      padding-right:10px;
+    }
+}
 
 
 /* container below nav bar*/
@@ -103,7 +127,6 @@ top:10%;
  width:40px;
  height:40px;
  position:absolute;
- /* background-color:bisque; */
  top:85%;
  left:40%;
  
@@ -151,4 +174,49 @@ top:10%;
 .icons>span>img{
 width:25px;
 padding-inline:5px;
+}
+@media only screen and (max-width:900px) and (min-width:480px){
+    .square>img{
+        top:55%;
+        left:20%;
+    }
+    .hero-heading{
+        font-size:40px;
+    }
+    .hero-container-right{
+        position:relative;
+        left:0;
+        top:100%;
+        margin-top:50px;
+    }
+    .hero-container>div>img{
+        top:12%;
+        left:5%;
+    }
+    .hero-container::after{
+        left:70%;
+        top:100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .square>img{
+        top:60%;
+        left:25%;
+    }
+    .hero-heading{
+        font-size:40px;
+    }
+    .hero-container-right{
+        position:relative;
+        left:0;
+        top:100%;
+        margin-top:50px;
+    }
+    .hero-container>div>img{
+        top:20%;
+    }
+    .hero-container::after{
+        left:80%;
+        top:110%;
+    }
 }
