@@ -64,7 +64,6 @@ width:20px;
     .navbar-container{
       display: flex;
       justify-content: space-between;
-      padding-inline:10px;
     }
     .navbar-container::after{
       content: "";
@@ -76,6 +75,9 @@ width:20px;
       background-repeat: no-repeat;
       background-size:40px 40px;
       padding-right:10px;
+    }
+    .navbar-container>div img{
+       margin-left:10px;
     }
 }
 
@@ -180,6 +182,9 @@ padding-inline:5px;
         top:55%;
         left:20%;
     }
+    .star>img{
+        right:100px;
+    }
     .hero-heading{
         font-size:40px;
     }
@@ -188,20 +193,22 @@ padding-inline:5px;
         left:0;
         top:100%;
         margin-top:50px;
+        width:100%;
+        margin-inline:20px;
     }
     .hero-container>div>img{
         top:12%;
         left:5%;
     }
     .hero-container::after{
-        left:70%;
+        left:80%;
         top:100%;
     }
 }
 @media only screen and (max-width:480px){
     .square>img{
-        top:60%;
-        left:25%;
+        top:50%;
+        left:28%;
     }
     .hero-heading{
         font-size:40px;
@@ -210,13 +217,13 @@ padding-inline:5px;
         position:relative;
         left:0;
         top:100%;
-        margin-top:50px;
+        
     }
     .hero-container>div>img{
         top:20%;
     }
     .hero-container::after{
         left:80%;
-        top:110%;
+        top:90%;
     }
-}
+} 
